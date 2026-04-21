@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- update -->
 
 <title>Fizjoterapeuta Będzin | Terapia manualna, masaż Kobido | MajFizjo</title>
 <meta name="description" content="Profesjonalna fizjoterapia w Będzinie. Terapia manualna, masaż Kobido, terapia blizn.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 :root{
@@ -21,19 +19,12 @@
 
 html{scroll-behavior:smooth;}
 
-body{
-font-family:'Poppins';
-margin:0;
-background:var(--bg);
-color:var(--text);
-line-height:1.7;
-}
+body{font-family:'Poppins';margin:0;background:var(--bg);color:var(--text);}
 
-/* SUBTELNIEJSZY GRADIENT */
 header{
-background:linear-gradient(160deg,#0fb9b1 0%, #20c997 60%, #eafafa 100%);
+background:linear-gradient(135deg,var(--primary),var(--accent));
 color:white;
-padding:90px 20px 110px;
+padding:80px 20px 100px;
 text-align:center;
 }
 
@@ -42,11 +33,11 @@ background:white;
 padding:18px;
 border-radius:50%;
 display:inline-block;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
 }
 
 header img{width:120px;}
-header h1{font-size:34px;margin:15px 0 5px;letter-spacing:0.5px;}
+header h1{font-size:34px;margin:15px 0 5px;}
 
 .hero-btn{
 margin-top:20px;
@@ -59,201 +50,42 @@ font-weight:600;
 text-decoration:none;
 }
 
-nav{
-background:white;
-text-align:center;
-padding:15px;
-position:sticky;
-top:0;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-}
+nav{background:white;text-align:center;padding:15px;position:sticky;top:0;box-shadow:0 5px 20px rgba(0,0,0,0.05);}
+nav a{margin:0 15px;color:var(--primary);text-decoration:none;font-weight:600;}
 
-nav a{
-margin:0 15px;
-color:var(--primary);
-text-decoration:none;
-font-weight:600;
-}
+section{padding:70px 20px;max-width:1100px;margin:auto;}
+h2{text-align:center;margin-bottom:30px;}
 
-section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
+.about-box{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.about-box img{width:100%;border-radius:25px;box-shadow:0 15px 40px rgba(0,0,0,0.15);} 
 
-h2{
-text-align:center;
-margin-bottom:30px;
-font-weight:600;
-letter-spacing:0.3px;
-}
+.about-text{max-width:520px;}
+.about-text p{margin-bottom:16px;line-height:1.7;font-size:15.5px;}
+.about-text .lead{font-size:18px;font-weight:600;}
+.about-text .highlight{margin-top:10px;font-weight:500;}
+.about-text strong{color:var(--primary);font-weight:600;}
 
-.about-box{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{background:white;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.07);text-align:center;transition:.3s;}
+.card:hover{transform:translateY(-8px);}
+.price{color:var(--primary);font-size:22px;font-weight:700;}
 
-.about-box img{
-width:100%;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
-}
+.icon{font-size:40px;margin-bottom:10px;display:block;color:var(--primary);}
 
-.about-text p{
-margin-bottom:18px;
-font-size:15.8px;
-}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:30px;}
+.step{background:white;padding:25px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.07);text-align:center;}
+.step-number{width:40px;height:40px;margin:0 auto 10px;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;}
+.visit-summary{text-align:center;margin-top:30px;font-size:16px;}
 
-.about-text .lead{
-font-size:18px;
-font-weight:600;
-}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.contact-info{background:white;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.07);}
+.contact-map iframe{width:100%;height:300px;border:0;border-radius:20px;}
 
-.about-text .highlight{
-margin-top:10px;
-font-weight:500;
-}
+.btn{display:inline-block;margin-top:20px;padding:14px 28px;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;text-decoration:none;border-radius:40px;}
 
-.about-text strong{
-color:var(--primary);
-font-weight:600;
-}
+footer{background:var(--primary);color:white;text-align:center;padding:30px;}
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{transform:translateY(-6px);}
-
-.price{
-color:var(--primary);
-font-size:22px;
-font-weight:700;
-}
-
-.icon{
-font-size:40px;
-margin-bottom:10px;
-display:block;
-color:var(--primary);
-}
-
-.steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.step{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
-text-align:center;
-}
-
-.step-number{
-width:40px;
-height:40px;
-margin:0 auto 10px;
-background:linear-gradient(135deg,var(--primary),var(--accent));
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:600;
-}
-
-.visit-summary{
-text-align:center;
-margin-top:30px;
-font-size:16px;
-}
-
-.contact-box{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.contact-info{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
-}
-
-.contact-map iframe{
-width:100%;
-height:300px;
-border:0;
-border-radius:20px;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:linear-gradient(135deg,var(--primary),var(--accent));
-color:white;
-text-decoration:none;
-border-radius:40px;
-}
-
-/* SOCIAL - PRAWDZIWE IKONY */
-.socials{
-margin-top:25px;
-display:flex;
-gap:18px;
-}
-
-.socials a{
-font-size:22px;
-transition:0.2s;
-}
-
-.socials a:nth-child(1){ color:#E4405F; }
-.socials a:nth-child(2){ color:#1877F2; }
-.socials a:nth-child(3){ color:#DB4437; }
-
-.socials a:hover{
-transform:translateY(-3px) scale(1.1);
-}
-
-footer{
-background:var(--primary);
-color:white;
-text-align:center;
-padding:30px;
-}
-
-.call-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:var(--accent);
-color:white;
-padding:15px 22px;
-border-radius:50px;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-}
+.call-btn{position:fixed;bottom:20px;right:20px;background:var(--accent);color:white;padding:15px 22px;border-radius:50px;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,0.25);} 
 
 @media(max-width:768px){
 .about-box{grid-template-columns:1fr;}
@@ -289,17 +121,17 @@ Jestem fizjoterapeutką, która pomaga wrócić do sprawności, pozbyć się bó
 </p>
 
 <p>
-Pracuję z osobami, które zmagają się z <strong>bólem kręgosłupa, napięciami oraz problemami narządu ruchu</strong>.
-Pomagam nie tylko zmniejszyć dolegliwości, ale także poprawić mobilność i komfort codziennego funkcjonowania.
+Pracuję z osobami, które zmagają się z <strong>bólem kręgosłupa, napięciami oraz problemami narządu ruchu</strong>. 
+Pomagam nie tylko zmniejszyć dolegliwości, ale też poprawić mobilność i komfort codziennego funkcjonowania.
 </p>
 
 <p>
-Każdą terapię dopasowuję indywidualnie – łączę <strong>wiedzę medyczną, terapię manualną oraz elementy treningu</strong>,
+Każdą terapię dopasowuję indywidualnie – łączę <strong>wiedzę medyczną, terapię manualną oraz elementy treningu</strong>, 
 aby osiągnąć trwałe efekty.
 </p>
 
 <p>
-Dbam również o regenerację i relaks. Wykonuję <strong>masaż Kobido</strong>, który rozluźnia napięcia, poprawia kondycję skóry
+Dbam również o regenerację i relaks. Wykonuję <strong>masaż Kobido</strong>, który rozluźnia napięcia, poprawia kondycję skóry 
 i przywraca naturalną równowagę organizmu.
 </p>
 
@@ -315,34 +147,89 @@ Moim celem jest kompleksowe wsparcie – tak, abyś mógł/mogła <strong>porusz
 </div>
 </section>
 
+<section id="help">
+<h2>W czym pomagam</h2>
+<div class="services">
+
+<div class="card">
+<span class="icon">🦴</span>
+<h3>Dolegliwości bólowe kręgosłupa i stawów obwodowych</h3>
+<p>ból pleców, szyi, barków, kolan i innych stawów</p>
+</div>
+
+<div class="card">
+<span class="icon">🏥</span>
+<h3>Rehabilitacja po urazach i zabiegach</h3>
+<p>powrót do sprawności po kontuzjach i operacjach</p>
+</div>
+
+<div class="card">
+<span class="icon">✨</span>
+<h3>Terapia blizny</h3>
+<p>poprawa mobilności tkanek i estetyki blizn</p>
+</div>
+
+<div class="card">
+<span class="icon">🧠</span>
+<h3>Bóle napięciowe</h3>
+<p>ból głowy, karku, napięcia związane ze stresem</p>
+</div>
+
+<div class="card">
+<span class="icon">🛡️</span>
+<h3>Profilaktyka</h3>
+<p>zapobieganie nawrotom bólu i utrzymanie sprawności</p>
+</div>
+
+<div class="card">
+<span class="icon">💨</span>
+<h3>Kompresjoterapia</h3>
+<p>redukcja obrzęków, poprawa krążenia i regeneracja</p>
+</div>
+
+<div class="card">
+<span class="icon">🏋️</span>
+<h3>Trening personalny</h3>
+<p>poprawa sprawności, siły i powrót do aktywności</p>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+<h2>Oferta</h2>
+<div class="services">
+<div class="card"><h3>Konsultacja – pierwsza wizyta</h3><p class="price">170 zł</p></div>
+<div class="card"><h3>Fizjoterapia – kolejna wizyta</h3><p class="price">150 zł</p></div>
+<div class="card"><h3>Masaż Kobido</h3><p class="price">230 zł</p></div>
+<div class="card"><h3>Terapia blizny</h3><p class="price">150 zł</p></div>
+<div class="card"><h3>Kompresjoterapia</h3><p class="price">80 zł</p></div>
+<div class="card"><h3>Trening personalny</h3><p class="price">120 zł</p></div>
+</div>
+</section>
+
+<section id="first-visit">
+<h2>Jak wygląda pierwsza wizyta?</h2>
+<div class="steps">
+<div class="step"><div class="step-number">1</div><h3>Wywiad</h3></div>
+<div class="step"><div class="step-number">2</div><h3>Diagnostyka</h3></div>
+<div class="step"><div class="step-number">3</div><h3>Terapia</h3></div>
+<div class="step"><div class="step-number">4</div><h3>Zalecenia</h3></div>
+</div>
+<p class="visit-summary">Pierwsza wizyta to dokładne zrozumienie problemu i rozpoczęcie skutecznej terapii.</p>
+</section>
+
 <section id="contact">
 <h2>Kontakt</h2>
 <div class="contact-box">
-
 <div class="contact-info">
 <h3>Umów wizytę</h3>
-
-<p>
-📞 <a href="tel:696674670">696 674 670</a><br>
-📍 Będzin, ul. Zwycięstwa 12
-</p>
-
-<a class="btn" href="https://www.znanylekarz.pl/z/n6oqUy" target="_blank">
-Umów wizytę online
-</a>
-
-<div class="socials">
-<a href="https://www.instagram.com/majfizjo/" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.facebook.com/p/MajFizjo-Maja-Bodz%C4%99ta-61572878965360/" target="_blank"><i class="fab fa-facebook"></i></a>
-<a href="https://share.google/edPifko2VGXUdVVjY" target="_blank"><i class="fab fa-google"></i></a>
+<p>📞 <a href="tel:696674670">696 674 670</a><br>📍 Będzin, ul. Zwycięstwa 12</p>
+<a class="btn" href="https://www.znanylekarz.pl/z/n6oqUy" target="_blank">Umów wizytę online</a>
 </div>
-
-</div>
-
 <div class="contact-map">
 <iframe src="https://www.google.com/maps?q=Będzin%20Zwycięstwa%2012&output=embed"></iframe>
 </div>
-
 </div>
 </section>
 
