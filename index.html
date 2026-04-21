@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fizjoterapeuta Będzin | MajFizjo Maja Bodzęta</title>
-<meta name="description" content="Fizjoterapia, trening personalny i masaż Kobido w Będzinie.">
-<!-- update -->
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- IKONY (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 :root{
@@ -17,8 +18,6 @@
 --bg:#f8fbfb;
 --text:#1f2d2d;
 }
-
-html{scroll-behavior:smooth;}
 
 body{font-family:'Poppins';margin:0;background:var(--bg);color:var(--text);}
 
@@ -47,8 +46,8 @@ padding:14px 30px;
 background:white;
 color:var(--primary);
 border-radius:40px;
-font-weight:600;
 text-decoration:none;
+font-weight:600;
 }
 
 nav{
@@ -68,7 +67,6 @@ font-weight:600;
 }
 
 section{padding:70px 20px;max-width:1100px;margin:auto;}
-h2{text-align:center;margin-bottom:30px;}
 
 .about-box{
 display:grid;
@@ -80,12 +78,6 @@ align-items:center;
 .about-box img{
 width:100%;
 border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
-}
-
-.about-text p{
-margin-bottom:16px;
-line-height:1.7;
 }
 
 .services{
@@ -98,65 +90,21 @@ gap:25px;
 background:white;
 padding:30px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{transform:translateY(-6px);}
-
-.icon{
-font-size:38px;
-margin-bottom:10px;
-display:block;
-color:var(--primary);
-}
-
-.price{
-color:var(--primary);
-font-size:22px;
-font-weight:700;
-}
-
-.steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.step{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
 text-align:center;
 }
 
-.step-number{
-width:40px;
-height:40px;
-margin:0 auto 10px;
-background:linear-gradient(135deg,var(--primary),var(--accent));
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:600;
-}
+.price{color:var(--primary);font-weight:700;}
 
 .contact-box{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
-align-items:center;
 }
 
 .contact-info{
 background:white;
 padding:30px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
 }
 
 .contact-map iframe{
@@ -170,28 +118,28 @@ border-radius:20px;
 display:inline-block;
 margin-top:20px;
 padding:14px 28px;
-background:linear-gradient(135deg,var(--primary),var(--accent));
+background:var(--primary);
 color:white;
 text-decoration:none;
 border-radius:40px;
 }
 
-/* IKONY SOCIAL */
+/* SOCIAL */
 .socials{
 margin-top:25px;
 display:flex;
-align-items:center;
-gap:15px;
+gap:20px;
 }
 
 .socials a{
-font-size:26px;
-text-decoration:none;
+font-size:28px;
+color:var(--primary);
 transition:0.2s;
 }
 
 .socials a:hover{
 transform:scale(1.2);
+color:var(--accent);
 }
 
 footer{
@@ -199,18 +147,6 @@ background:var(--primary);
 color:white;
 text-align:center;
 padding:30px;
-}
-
-.call-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:var(--accent);
-color:white;
-padding:15px 22px;
-border-radius:50px;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 @media(max-width:768px){
@@ -240,11 +176,10 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 <h2>O mnie</h2>
 <div class="about-box">
 <img src="ja.jpg">
-<div class="about-text">
-<p>Jestem fizjoterapeutką, która pomaga wrócić do sprawności, pozbyć się bólu i poprawić komfort życia.</p>
-<p>Łączę terapię manualną, trening oraz masaż, aby osiągnąć trwałe efekty.</p>
-<p>Dbam nie tylko o leczenie, ale również o regenerację i dobre samopoczucie pacjentów.</p>
-</div>
+<p>
+Jestem fizjoterapeutką, która pomaga wrócić do sprawności i pozbyć się bólu.
+Łączę terapię manualną, trening i masaż dla najlepszych efektów.
+</p>
 </div>
 </section>
 
@@ -259,24 +194,12 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 </div>
 </section>
 
-<section>
-<h2>Jak wygląda pierwsza wizyta?</h2>
-<div class="steps">
-<div class="step"><div class="step-number">1</div><h3>Wywiad</h3></div>
-<div class="step"><div class="step-number">2</div><h3>Diagnostyka</h3></div>
-<div class="step"><div class="step-number">3</div><h3>Terapia</h3></div>
-<div class="step"><div class="step-number">4</div><h3>Zalecenia</h3></div>
-</div>
-</section>
-
 <section id="contact">
 <h2>Kontakt</h2>
 
 <div class="contact-box">
 
 <div class="contact-info">
-<h3>Umów wizytę</h3>
-
 <p>
 📞 <a href="tel:696674670">696 674 670</a><br>
 📍 Będzin, ul. Zwycięstwa 12
@@ -287,9 +210,9 @@ Umów wizytę online
 </a>
 
 <div class="socials">
-<a href="https://www.instagram.com/majfizjo/" target="_blank">📸</a>
-<a href="https://www.facebook.com/p/MajFizjo-Maja-Bodz%C4%99ta-61572878965360/" target="_blank">👍</a>
-<a href="https://share.google/edPifko2VGXUdVVjY" target="_blank">📍</a>
+<a href="https://www.instagram.com/majfizjo/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/p/MajFizjo-Maja-Bodz%C4%99ta-61572878965360/" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://share.google/edPifko2VGXUdVVjY" target="_blank"><i class="fab fa-google"></i></a>
 </div>
 
 </div>
@@ -302,10 +225,8 @@ Umów wizytę online
 </section>
 
 <footer>
-<p>© 2026 MajFizjo</p>
+© 2026 MajFizjo
 </footer>
-
-<a class="call-btn" href="tel:696674670">📞 Zadzwoń</a>
 
 </body>
 </html>
