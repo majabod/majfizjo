@@ -18,42 +18,177 @@
 }
 
 body{font-family:'Poppins';margin:0;background:var(--bg);color:var(--text);}
-header{background:linear-gradient(135deg,var(--primary),var(--accent));color:white;padding:80px 20px;text-align:center;}
-.logo-wrap{background:white;padding:18px;border-radius:50%;display:inline-block;box-shadow:0 15px 40px rgba(0,0,0,0.25);}
+
+header{
+background:linear-gradient(135deg,var(--primary),var(--accent));
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.logo-wrap{
+background:white;
+padding:18px;
+border-radius:50%;
+display:inline-block;
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
 header img{width:120px;}
+
 header h1{margin:15px 0 5px;}
-header p{margin:0 0 15px;}
 
-.hero-btn{padding:14px 30px;background:white;color:var(--primary);border-radius:40px;text-decoration:none;font-weight:600;}
+header p{margin-bottom:15px;}
 
-nav{background:white;text-align:center;padding:15px;position:sticky;top:0;}
-nav a{margin:0 15px;color:var(--primary);text-decoration:none;font-weight:600;}
+.hero-btn{
+padding:14px 30px;
+background:white;
+color:var(--primary);
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
 
-section{padding:70px 20px;max-width:1100px;margin:auto;}
-h2{text-align:center;margin-bottom:30px;}
+nav{
+background:white;
+text-align:center;
+padding:15px;
+position:sticky;
+top:0;
+}
 
-.about-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
-.about-box img{width:100%;border-radius:20px;}
+nav a{
+margin:0 15px;
+color:var(--primary);
+text-decoration:none;
+font-weight:600;
+}
 
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.card{background:white;padding:25px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,0.05);}
-.icon{font-size:35px;margin-bottom:10px;}
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
 
-.price{color:var(--primary);font-weight:700;}
+h2{
+text-align:center;
+margin-bottom:30px;
+}
 
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
-.step{background:white;padding:20px;border-radius:20px;text-align:center;}
+.about-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
 
-.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-.contact-info{background:white;padding:30px;border-radius:20px;}
-.contact-map iframe{width:100%;height:300px;border:0;border-radius:20px;}
+.about-box img{
+width:100%;
+border-radius:20px;
+}
 
-.btn{display:inline-block;margin-top:15px;padding:12px 25px;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;text-decoration:none;border-radius:30px;}
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-footer{background:var(--primary);color:white;text-align:center;padding:20px;}
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.icon{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.price{
+color:var(--primary);
+font-weight:700;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.step{
+background:white;
+padding:20px;
+border-radius:20px;
+text-align:center;
+}
+
+.contact-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-info{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.contact-map iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:linear-gradient(135deg,var(--primary),var(--accent));
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* SOCIAL BUTTONS */
+.socials{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.social-btn{
+display:block;
+padding:10px 15px;
+background:#f1f5f5;
+border-radius:10px;
+text-decoration:none;
+color:var(--text);
+font-weight:500;
+transition:0.2s;
+}
+
+.social-btn:hover{
+background:var(--primary);
+color:white;
+}
+
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:20px;
+}
 
 @media(max-width:768px){
-.about-box,.contact-box{grid-template-columns:1fr;}
+.about-box,.contact-box{
+grid-template-columns:1fr;
+}
 }
 </style>
 </head>
@@ -80,8 +215,8 @@ footer{background:var(--primary);color:white;text-align:center;padding:20px;}
 <div class="about-box">
 <img src="ja.jpg">
 <p>
-Jestem fizjoterapeutką, która pomaga wrócić do sprawności i pozbyć się bólu. 
-Łączę terapię manualną, trening i masaż, aby osiągnąć trwałe efekty. 
+Jestem fizjoterapeutką, która pomaga wrócić do sprawności i pozbyć się bólu.
+Łączę terapię manualną, trening i masaż, aby osiągnąć trwałe efekty.
 Dbam nie tylko o leczenie, ale też o komfort i dobre samopoczucie pacjentów.
 </p>
 </div>
@@ -124,6 +259,7 @@ Dbam nie tylko o leczenie, ale też o komfort i dobre samopoczucie pacjentów.
 
 <section id="contact">
 <h2>Kontakt</h2>
+
 <div class="contact-box">
 
 <div class="contact-info">
@@ -138,11 +274,15 @@ Dbam nie tylko o leczenie, ale też o komfort i dobre samopoczucie pacjentów.
 Umów wizytę online
 </a>
 
-<div style="margin-top:20px;">
+<div class="socials">
 <p><strong>Znajdź mnie:</strong></p>
-<a href="https://share.google/edPifko2VGXUdVVjY" target="_blank">Google</a><br>
-<a href="https://www.instagram.com/majfizjo/" target="_blank">Instagram</a><br>
-<a href="https://www.facebook.com/p/MajFizjo-Maja-Bodz%C4%99ta-61572878965360/" target="_blank">Facebook</a>
+
+<a href="https://share.google/edPifko2VGXUdVVjY" target="_blank" class="social-btn">📍 Google</a>
+
+<a href="https://www.instagram.com/majfizjo/" target="_blank" class="social-btn">📸 Instagram</a>
+
+<a href="https://www.facebook.com/p/MajFizjo-Maja-Bodz%C4%99ta-61572878965360/" target="_blank" class="social-btn">👍 Facebook</a>
+
 </div>
 
 </div>
